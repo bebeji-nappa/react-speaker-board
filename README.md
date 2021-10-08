@@ -7,7 +7,7 @@ It install react-speaker-board running this comand.
 $ yarn add react-speaker-board
 ```
 
-It create slide view component.
+It create slide component.
 ```js
 import React from 'react'
 import { MainTitle, MainContent, SectionTitle, Spacer, Layout, Theme } from 'react-speaker-board'
@@ -15,7 +15,9 @@ import { MainTitle, MainContent, SectionTitle, Spacer, Layout, Theme } from 'rea
 const Subject = (
   <Theme themeColor="green" textColor="white">
     <Layout layout="subject">
-      <MainTitle textAlign="center"></MainTitle>
+      <MainTitle textAlign="center">
+        Hello React Speaker Board!
+      </MainTitle>
       <Spacer />
       <MainContent textAlign="center">
         <span style={{ textAlign: "center" }}>
@@ -45,9 +47,9 @@ const Content_2 = (
       <Spacer />
       <Spacer />
       <MainContent size="large">
-        <li>list1</li>
-        <li>list2</li>
-        <li>list3</li>
+        <li style={{ margin: "10px 0" }}>list1</li>
+        <li style={{ margin: "10px 0" }}>list2</li>
+        <li style={{ margin: "10px 0" }}>list3</li>
       </MainContent>
     </Layout>
   </Theme>
@@ -80,4 +82,20 @@ export const Slide = [
 
 ```
 
+It show slide compoent in page using `ReactSpeakerBoard` Component.
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { ReactSpeakerBoard } from 'react-speaker-board'
+import { Slide } from './slide'
+import "./reset.css"
+
+ReactDOM.render(
+  <ReactSpeakerBoard slide={Slide} mode="slide" />,
+  document.getElementById('root')
+);
+```
+
+## License
+MIT
 
