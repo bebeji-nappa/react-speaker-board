@@ -1,7 +1,6 @@
 .MainTitle {
   text-align: center;
   font-weight: bold;
-  font-size: 72px;
   margin: 0;
   white-space: pre-wrap;
 }
@@ -21,4 +20,32 @@
 .right {
   display: flex;
   align-items: flex-end;
+}
+
+.size-xsmall {
+  font-size: 10px;
+}
+
+.size-small {
+  font-size: 20px;
+}
+
+.size-medium {
+  font-size: 30px;
+}
+
+.size-large {
+  font-size: 40px;
+}
+
+.size-xlarge {
+  font-size: 50px;
+}
+
+.size-xxlarge {
+  font-size: 60px;
+}
+
+.size-xxxlarge {
+  font-size: 70px;
 }

@@ -20,10 +20,18 @@
   padding: 0;
 }
 
-.Control {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  margin: 50px;
-  bottom: 0;
+/* _::-webkit-full-page-media, _:future, :root .Control {
+  position: static;
+} */
+
+.fade {
+  animation: fadeIn 0.2s ease 0.3s 1 normal;
+}
+@keyframes fadeIn {
+  0% { 
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }

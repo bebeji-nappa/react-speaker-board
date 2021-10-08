@@ -29,6 +29,10 @@
   font-size: 60px;
 }
 
+.size-xxxlarge {
+  font-size: 70px;
+}
+
 .center {
   display: flex;
   flex-direction: column;

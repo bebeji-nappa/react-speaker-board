@@ -15,7 +15,7 @@ const themeValue = [
 
 export const Theme:React.VFC<ThemeProps> = ({themeColor = "default", textColor = "black", children }) => {
   return (
-    <div className={`theme-wrap ${themeValue.includes(themeColor) ? `${themeColor}-theme` : "default"}`} style={{ color: textColor }}>
+    <div className={`theme-wrap${themeValue.includes(themeColor) ? ` ${themeColor}-theme` : "default"}`} style={{ color: textColor }}>
       {children}
     </div>
   )
