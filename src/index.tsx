@@ -1,6 +1,6 @@
 import { ReactSpeakerBoard } from "./Base";
 import { MainTitle } from "./MainTitle";
-import { MainText } from "./MainText";
+import { MainContent } from "./MainContent";
 import { SectionTitle } from "./SectionTitle";
 import { Spacer } from "./Spacer";
 import { Layout } from "./Layout";
@@ -9,7 +9,7 @@ import { Theme } from "./Theme";
 export {
   ReactSpeakerBoard,
   MainTitle,
-  MainText,
+  MainContent,
   SectionTitle,
   Spacer,
   Layout,

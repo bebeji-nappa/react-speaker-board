@@ -23,7 +23,7 @@ interface SectionTitleProps {
   textAlign?: string | null,
 }
 
-interface MainTextProps {
+interface MainContentProps {
   children: string | React.ReactNode,
   textAlign?: string | null,
   size?: string | null,
