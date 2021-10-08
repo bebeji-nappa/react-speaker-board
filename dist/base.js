@@ -6,7 +6,7 @@ const modeValue = [
     "slide",
     "inlineSlide"
 ];
-export const ReactSpeakerBoard = ({ mode = "slide", slide, controlTheme = "#71a3e3", width = "80vw", height = "80vh" }) => {
+export const ReactSpeakerBoard = ({ mode = "slide", slide, controlTheme = "#71a3e3", controlBar = "none", width = "80vw", height = "80vh" }) => {
     const [view, setView] = useState(slide[0]);
     const [index, setIndex] = useState(0);
     const max = slide.length - 1;
@@ -29,9 +29,9 @@ export const ReactSpeakerBoard = ({ mode = "slide", slide, controlTheme = "#71a3
         mode === "inlineSlide" ?
         React.createElement("div", { className: mode, style: { width: `${width}`, height: `${height}` } },
             view,
-            React.createElement(Control, { next: () => NextSlide(), prov: () => ProvSlide(), color: controlTheme })) :
+            React.createElement(Control, { next: () => NextSlide(), prov: () => ProvSlide(), color: controlTheme, controlBar: controlBar })) :
         React.createElement("div", { className: mode },
             view,
-            React.createElement(Control, { next: () => NextSlide(), prov: () => ProvSlide(), color: controlTheme }))));
+            React.createElement(Control, { next: () => NextSlide(), prov: () => ProvSlide(), color: controlTheme, controlBar: controlBar }))));
 };
 //# sourceMappingURL=Base.js.map
