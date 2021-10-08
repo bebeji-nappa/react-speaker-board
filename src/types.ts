@@ -4,28 +4,32 @@ interface SpeakerBoardProps {
   controlTheme?: string,
   width?: string,
   height?: string,
+  controlBar?: string,
   slide: JSX.Element[],
 }
 
 interface ThemeProps {
   themeColor?: string,
   textColor?: string,
+  animate?: string,
   children: React.ReactNode,
 }
 
 interface MainTitleProps {
   children: string | React.ReactNode,
   textAlign?: string | null,
+  size?: string | null,
 }
 
 interface SectionTitleProps {
   children: string | React.ReactNode,
   textAlign?: string | null,
+  size?: string | null,
 }
 
-interface MainContentProps {
+interface ContentProps {
   children: string | React.ReactNode,
-  textAlign?: string | null,
+  align?: string | null,
   size?: string | null,
 }
 
@@ -35,9 +39,10 @@ interface LayoutProps {
 }
 
 interface Control {
-  next: () => void;
-  prov: () => void;
-  color: string;
+  next: () => void,
+  prov: () => void,
+  color: string,
+  controlBar?: string,
 }
 
 declare module "*.png" {
