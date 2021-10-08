@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ES2021",
+    "module": "ES2020",
+    "jsx": "react",
+    "strict": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist/",
+    "lib": [
+      "ES2021",
+      "DOM"
+    ],
+  },
+  "files": [
+    "src/index.tsx"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "react-speaker-board",
+  "version": "0.0.1",
+  "description": "Easily create presentation board using React.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "React",
+    "react-speaker-board"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bebeji-nappa/react-speaker-board.git"
+  },
+  "author": "nappa <masa.yanagawa721@gmail.com> (https://twitter.com/nappa_bebeji)",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

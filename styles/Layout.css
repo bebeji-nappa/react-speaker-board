@@ -1,0 +1,17 @@
+.board {
+  width: 85%;
+  height: 85%;
+  margin: 50px;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}

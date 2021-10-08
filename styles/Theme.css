@@ -1,0 +1,42 @@
+.theme-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.default-theme {
+  background: #ffffff;
+}
+
+.sunset-theme {
+  background: radial-gradient(#fec540, #fa709a);
+}
+
+.malinka-theme {
+  background: radial-gradient(#f093fb, #f5576c);
+}
+
+.moon-theme {
+  background: radial-gradient(#5ee7df, #b490ca);
+}
+
+.darkblue-theme {
+  background: radial-gradient(#30cfd0, #330867);
+}
+
+.sky-theme {
+  background: radial-gradient(#4facfe, #00f2fe);
+}
+
+.green-theme {
+  background: radial-gradient(#43e97b, #38f9d7);
+}
+
+.dark-theme {
+  background: radial-gradient(#2a2845, #030033);
+}
