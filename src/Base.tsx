@@ -37,7 +37,7 @@ export const ReactSpeakerBoard:React.VFC<SpeakerBoardProps> = ({ mode = "slide",
       mode === "inlineSlide" ? 
       <div className={mode} style={{ width: `${width}`, height: `${height}` }}>
         {view}
-        <Control next={() => NextSlide()} prov={() => ProvSlide()} color={controlTheme} />
+        <Control next={() => NextSlide()} prov={() => ProvSlide()} color={controlTheme} controlBar={controlBar} />
       </div> :
       <div className={mode}>
         {view}
