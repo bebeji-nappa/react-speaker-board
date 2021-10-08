@@ -1,6 +1,6 @@
 {
   "name": "react-speaker-board",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easily create presentation board using React.",
   "main": "./dist/index.js",
   "scripts": {
