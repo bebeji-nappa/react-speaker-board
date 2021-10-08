@@ -10,74 +10,56 @@ $ yarn add react-speaker-board
 It create slide component.
 ```js
 import React from 'react'
-import { MainTitle, MainContent, SectionTitle, Spacer, Layout, Theme } from 'react-speaker-board'
+import { MainTitle, Content, SectionTitle, Spacer, Layout, Theme } from 'react-speaker-board'
 
 const Subject = (
-  <Theme themeColor="green" textColor="white">
+  <Theme themeColor="sky" textColor="white">
     <Layout layout="subject">
+      <MainTitle textAlign="center">React Speaker Board</MainTitle>
+      <Spacer />
+      <Content align="center">
+        <span style={{ textAlign: "center" }}>
+          Easily create presentation board using React.
+        </span>
+      </Content>
+    </Layout>
+  </Theme>
+)
+
+const Concept = (
+  <Theme themeColor="sky" textColor="white">
+    <Layout layout="section">
+      <Spacer />
+      <Spacer />
       <MainTitle textAlign="center">
-        Hello React Speaker Board!
+        Concept
       </MainTitle>
       <Spacer />
-      <MainContent textAlign="center">
-        <span style={{ textAlign: "center" }}>
-          nappa
-        </span>
-      </MainContent>
+      <Spacer />
+      <Content align="center">
+        <Content align="left" size="xlarge">
+          <li>Easy to make</li>
+          <li>Easy to customize</li>
+          <li>Abundant theme colors</li>
+        </Content>
+      </Content>
     </Layout>
   </Theme>
 )
-
-const Content_1 = (
-  <Theme themeColor="malinka" textColor="white">
+const Documentation = (
+  <Theme themeColor="sky" textColor="white">
     <Layout layout="subject">
-      <MainTitle textAlign="center">Content 1</MainTitle>
-    </Layout>
-  </Theme>
-)
-
-const Content_2 = (
-  <Theme themeColor="sunset" textColor="white">
-    <Layout layout="section">
-      <Spacer />
-      <Spacer />
-      <SectionTitle textAlign="left">
-        I use React Speaker Board.
-      </SectionTitle>
-      <Spacer />
-      <Spacer />
-      <MainContent size="large">
-        <li style={{ margin: "10px 0" }}>list1</li>
-        <li style={{ margin: "10px 0" }}>list2</li>
-        <li style={{ margin: "10px 0" }}>list3</li>
-      </MainContent>
-    </Layout>
-  </Theme>
-)
-
-const Content_3 = (
-  <Theme themeColor="darkblue" textColor="white">
-    <Layout layout="section">
-      <Spacer />
-      <Spacer />
-      <SectionTitle textAlign="left">
-        I use React Speaker Board.
-      </SectionTitle>
-      <Spacer />
-      <Spacer />
-      <Spacer />
-      <MainContent textAlign="center" size="xxlarge">
-        <Layout layout="subject">YES!!</Layout>
-      </MainContent>
+      <MainTitle textAlign="center">
+        Let's use React Speaker Board!
+      </MainTitle>
     </Layout>
   </Theme>
 )
 
 export const Slide = [
   Subject,
-  Content_1,
-  Content_2,
-  Content_3,
+  Concept,
+  Documentation,
 ]
 
 ```
