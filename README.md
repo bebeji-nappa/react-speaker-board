@@ -12,49 +12,56 @@ It create slide component.
 import React from 'react'
 import { MainTitle, Content, SectionTitle, Spacer, Layout, Theme } from 'react-speaker-board'
 
-const Subject = (
-  <Theme themeColor="sky" textColor="white">
-    <Layout layout="subject">
-      <MainTitle textAlign="center">React Speaker Board</MainTitle>
-      <Spacer />
-      <Content align="center">
-        <span style={{ textAlign: "center" }}>
-          Easily create presentation board using React.
-        </span>
-      </Content>
-    </Layout>
-  </Theme>
-)
-
-const Concept = (
-  <Theme themeColor="sky" textColor="white">
-    <Layout layout="section">
-      <Spacer />
-      <Spacer />
-      <MainTitle textAlign="center">
-        Concept
-      </MainTitle>
-      <Spacer />
-      <Spacer />
-      <Content align="center">
-        <Content align="left" size="xlarge">
-          <li>Easy to make</li>
-          <li>Easy to customize</li>
-          <li>Abundant theme colors</li>
+const Subject = () => {
+  return (
+    <Theme themeColor="sky" textColor="white">
+      <Layout layout="subject">
+        <MainTitle textAlign="center">React Speaker Board</MainTitle>
+        <Spacer />
+        <Content align="center">
+          <span style={{ textAlign: "center" }}>
+            Easily create presentation board using React.
+          </span>
         </Content>
-      </Content>
-    </Layout>
-  </Theme>
-)
-const Documentation = (
-  <Theme themeColor="sky" textColor="white">
-    <Layout layout="subject">
-      <MainTitle textAlign="center">
-        Let's use React Speaker Board!
-      </MainTitle>
-    </Layout>
-  </Theme>
-)
+      </Layout>
+    </Theme>
+  )
+}
+
+const Concept = () => {
+  return (
+    <Theme themeColor="sky" textColor="white">
+      <Layout layout="section">
+        <Spacer />
+        <Spacer />
+        <MainTitle textAlign="center">
+          Concept
+        </MainTitle>
+        <Spacer />
+        <Spacer />
+        <Content align="center">
+          <Content align="left" size="xlarge">
+            <li>Easy to make</li>
+            <li>Easy to customize</li>
+            <li>Abundant theme colors</li>
+          </Content>
+        </Content>
+      </Layout>
+    </Theme>
+  )
+}
+
+const Documentation = () => {
+  return (
+    <Theme themeColor="sky" textColor="white">
+      <Layout layout="subject">
+        <MainTitle textAlign="center">
+          Let's use React Speaker Board!
+        </MainTitle>
+      </Layout>
+    </Theme>
+  )
+}
 
 export const Slide = [
   Subject,

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 export const Control: React.VFC<Control> = ({ next, prov, color, controlBar }) => {
   return (
