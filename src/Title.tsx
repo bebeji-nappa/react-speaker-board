@@ -17,7 +17,7 @@ const sizeValue = [
   "xxxlarge",
 ]
 
-const MainTitle:React.VFC<MainTitleProps> = ({children, textAlign = "left", size = "xxxlarge"}) => {
+const Title:React.VFC<TitleProps> = ({children, textAlign = "left", size = "xxxlarge"}) => {
   return (
     <h1 
       className={
@@ -29,4 +29,4 @@ const MainTitle:React.VFC<MainTitleProps> = ({children, textAlign = "left", size
   )
 }
 
-export default MainTitle
+export default Title
