@@ -5,7 +5,7 @@ interface SpeakerBoardProps {
   width?: string,
   height?: string,
   controlBar?: string,
-  slide: JSX.Element[],
+  slide: (() => JSX.Element)[],
 }
 
 interface ThemeProps {
@@ -17,20 +17,20 @@ interface ThemeProps {
 
 interface MainTitleProps {
   children: string | React.ReactNode,
-  textAlign?: string | null,
-  size?: string | null,
+  textAlign?: string,
+  size?: string,
 }
 
 interface SectionTitleProps {
   children: string | React.ReactNode,
-  textAlign?: string | null,
-  size?: string | null,
+  textAlign?: string,
+  size?: string,
 }
 
 interface ContentProps {
   children: string | React.ReactNode,
-  align?: string | null,
-  size?: string | null,
+  align?: string,
+  size?: string,
 }
 
 interface LayoutProps {
@@ -43,24 +43,4 @@ interface Control {
   prov: () => void,
   color: string,
   controlBar?: string,
-}
-
-declare module "*.png" {
-  const value: any;
-  export = value;
-}
-
-declare module "*.jpg" {
-  const value: any;
-  export = value;
-}
-
-declare module "*.jpeg" {
-  const value: any;
-  export = value;
-}
-
-declare module "*.svg" {
-  const value: any;
-  export = value;
 }
