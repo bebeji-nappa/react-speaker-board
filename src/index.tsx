@@ -1,16 +1,14 @@
 import ReactSpeakerBoard from "./ReactSpeakerBoard";
-import MainTitle from "./MainTitle";
+import Title from "./Title";
 import Content from "./Content";
-import SectionTitle from "./SectionTitle";
 import Spacer from "./Spacer";
 import Layout from "./Layout";
 import Theme from "./Theme";
 
 export { 
   ReactSpeakerBoard as ReactSpeakerBoard,
-  MainTitle as MainTitle,
+  Title as Title,
   Content as Content,
-  SectionTitle as SectionTitle,
   Spacer as Spacer,
   Layout as Layout,
   Theme as Theme

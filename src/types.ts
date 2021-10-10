@@ -15,13 +15,7 @@ interface ThemeProps {
   children: React.ReactNode,
 }
 
-interface MainTitleProps {
-  children: string | React.ReactNode,
-  textAlign?: string,
-  size?: string,
-}
-
-interface SectionTitleProps {
+interface TitleProps {
   children: string | React.ReactNode,
   textAlign?: string,
   size?: string,
