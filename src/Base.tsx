@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./types"
-import "../styles/Base.css"
 import { Control } from "./Control";
 
 const modeValue = [

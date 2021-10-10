@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/SectionTitle.css"
 
 export const SectionTitle:React.VFC<SectionTitleProps> = ({children, textAlign = "left", size = "xlarge"}) => {
   return (

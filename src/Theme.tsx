@@ -1,6 +1,5 @@
 import React from "react";
 import "./types"
-import "../styles/Theme.css"
 
 const themeValue = [
   "default",

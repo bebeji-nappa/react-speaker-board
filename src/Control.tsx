@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Control.css"
 
 export const Control: React.VFC<Control> = ({ next, prov, color, controlBar }) => {
   return (
