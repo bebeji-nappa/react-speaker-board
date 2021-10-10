@@ -69,6 +69,7 @@ It show slide compoent in page using `ReactSpeakerBoard` Component.
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ReactSpeakerBoard } from 'react-speaker-board'
+import 'react-speaker-board/styles/style.css'
 import { Slide } from './slide'
 import "./reset.css"
 
