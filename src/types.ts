@@ -38,7 +38,7 @@ interface LayoutProps {
   layout: string,
 }
 
-interface Control {
+interface ControlProps {
   next: () => void,
   prov: () => void,
   color: string,

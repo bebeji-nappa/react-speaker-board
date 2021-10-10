@@ -1,9 +1,17 @@
-import * as Components from "./ReactSpeakerBoard";
+import ReactSpeakerBoard from "./ReactSpeakerBoard";
+import MainTitle from "./MainTitle";
+import Content from "./Content";
+import SectionTitle from "./SectionTitle";
+import Spacer from "./Spacer";
+import Layout from "./Layout";
+import Theme from "./Theme";
 
-export const ReactSpeakerBoard = Components.ReactSpeakerBoard;
-export const MainTitle = Components.MainTitle;
-export const Content = Components.Content;
-export const SectionTitle = Components.SectionTitle;
-export const Spacer = Components.Spacer;
-export const Layout = Components.Layout;
-export const Theme = Components.Theme;
+export { 
+  ReactSpeakerBoard as ReactSpeakerBoard,
+  MainTitle as MainTitle,
+  Content as Content,
+  SectionTitle as SectionTitle,
+  Spacer as Spacer,
+  Layout as Layout,
+  Theme as Theme
+}

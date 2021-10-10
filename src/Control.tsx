@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Control: React.VFC<Control> = ({ next, prov, color, controlBar }) => {
+export const Control: React.VFC<ControlProps> = ({ next, prov, color, controlBar }) => {
   return (
     <div className={`Control-wrap background-${controlBar}`}>
       <div className="Control">
