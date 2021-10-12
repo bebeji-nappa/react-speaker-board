@@ -44,6 +44,8 @@ interface FigureProps {
   color?: string,
   width?: string,
   height?: string,
+  borderColor?: string,
+  borderWidth?: string,
   children?: string | React.ReactNode,
 }
 

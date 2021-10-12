@@ -6,8 +6,8 @@ const TriangleLeft: React.VFC<TriangleProps> = ({ children, height, color = "bla
     <>
       {children ? 
         <div className="triangle" style={{
-          width: 0,
-          height: 0,
+          width: "0",
+          height: "0",
           borderTop: `${size}px solid transparent`,
           borderRight: `${height}px solid ${color}`,
           borderBottom: `${size}px solid transparent`, 
@@ -15,8 +15,8 @@ const TriangleLeft: React.VFC<TriangleProps> = ({ children, height, color = "bla
           {children}
         </div> :
         <div className="triangle" style={{
-          width: 0,
-          height: 0,
+          width: "0",
+          height: "0",
           borderTop: `${size}px solid transparent`,
           borderRight: `${height}px solid ${color}`,
           borderBottom: `${size}px solid transparent`, 
