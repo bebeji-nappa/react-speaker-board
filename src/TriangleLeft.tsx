@@ -1,24 +1,28 @@
 import * as React from "react";
-import styled from 'styled-components';
 import "./types"
 
-const TriangleLeft: React.VFC<TriangleProps> = ({ children, height = "0", color = "black", size = "100" }) => {
-  const TriangleLeft = styled.div`
-    color: ${color};
-    border-top: ${size}px solid transparent;
-    border-right: ${size + 10 * Number(height)}px solid ${color};
-    border-buttom: ${size}px solid transparent; 
-  `;
-
+const TriangleLeft: React.VFC<TriangleProps> = ({ children, height, color = "black", size = "100" }) => {
   return (
-    <TriangleLeft>
+    <>
       {children ? 
-        <div>
+        <div className="triangle" style={{
+          width: 0,
+          height: 0,
+          borderTop: `${size}px solid transparent`,
+          borderRight: `${height}px solid ${color}`,
+          borderBottom: `${size}px solid transparent`, 
+        }}>
           {children}
         </div> :
-        <div></div>
+        <div className="triangle" style={{
+          width: 0,
+          height: 0,
+          borderTop: `${size}px solid transparent`,
+          borderRight: `${height}px solid ${color}`,
+          borderBottom: `${size}px solid transparent`, 
+        }}></div>
       }
-    </TriangleLeft>
+    </>
   )
 }
 
