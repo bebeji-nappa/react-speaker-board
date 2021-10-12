@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./types"
 
-const Square: React.VFC<FigureProps> = ({ children, color = "black", width = 100, height = 100 }) => {
+const Square: React.VFC<FigureProps> = ({ children, color = "black", width = "100", height = "100" }) => {
   return (
     <>
       {children ? 
