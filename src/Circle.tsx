@@ -1,14 +1,14 @@
 import * as React from "react";
 import "./types"
 
-const Circle: React.VFC<FigureProps> = ({ children, backgroundColor = "white", color = "black", width = "100px", height = "100px" }) => {
+const Circle: React.VFC<FigureProps> = ({ children, color = "black", width = "100px", height = "100px" }) => {
   return (
     <>
       {children ? 
-        <div className="cicle" style={{ backgroundColor: backgroundColor, color: color, width: width, height: height }}>
+        <div className="cicle" style={{ backgroundColor: color, width: `${width}px`, height: `${height}px` }}>
           {children}
         </div> :
-        <div className="circle" style={{ backgroundColor: backgroundColor, color: color, width: width, height: height }}></div>
+        <div className="circle" style={{ backgroundColor: color, width: `${width}px`, height: `${height}px` }}></div>
       }
     </>
   )

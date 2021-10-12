@@ -49,7 +49,7 @@ interface FigureProps {
 
 interface TriangleProps {
   color?: string,
-  size?: string,
-  direction?: string,
+  size?: number,
+  height?: number,
   children?: string | React.ReactNode,
 }

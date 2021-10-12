@@ -2,12 +2,12 @@ import * as React from "react";
 import styled from 'styled-components';
 import "./types"
 
-const TriangleRight: React.VFC<TriangleProps> = ({ children, color = "black", size = "100px" }) => {
+const TriangleRight: React.VFC<TriangleProps> = ({ children, height = 0, color = "black", size = 100 }) => {
   const TriangleRight = styled.div`
     color: ${color};
-    border-top: ${size} solid transparent;
-    border-bottom: ${size} solid transparent;
-    border-left: ${size} solid ${color}; 
+    border-top: ${size}px solid transparent;
+    border-bottom: ${size}px solid transparent;
+    border-left: ${size + 10 * height}px solid ${color}; 
   `;
 
   return (
