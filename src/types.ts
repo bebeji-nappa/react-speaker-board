@@ -38,3 +38,20 @@ interface ControlProps {
   color: string,
   controlBar?: string,
 }
+
+interface FigureProps {
+  backgroundColor?: string,
+  color?: string,
+  width?: string,
+  height?: string,
+  borderColor?: string,
+  borderWidth?: string,
+  children?: string | React.ReactNode,
+}
+
+interface TriangleProps {
+  color?: string,
+  size: string,
+  height: string,
+  children?: string | React.ReactNode,
+}
