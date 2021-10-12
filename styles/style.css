@@ -307,3 +307,19 @@ button {
 .dark-theme {
   background: radial-gradient(#2a2845, #030033);
 }
+
+/* Figure */
+.square {
+  display: block;
+
+}
+
+.circle {
+  display: block;
+  border-radius: 50%;
+}
+
+.triangle {
+  display: block;
+  
+}
