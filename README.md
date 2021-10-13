@@ -18,7 +18,7 @@ const Subject = () => {
       <Layout layout="subject">
         <Title textAlign="center">React Speaker Board</Title>
         <Spacer />
-        <Content align="center">
+        <Content horizontal="center">
           <span style={{ textAlign: "center" }}>
             Easily create presentation board using React.
           </span>
@@ -39,8 +39,8 @@ const Concept = () => {
         </Title>
         <Spacer />
         <Spacer />
-        <Content align="center">
-          <Content align="left" size="xlarge">
+        <Content horizontal="center">
+          <Content horizontal="left" size="xlarge">
             <li>Easy to make</li>
             <li>Easy to customize</li>
             <li>Abundant theme colors</li>
