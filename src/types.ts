@@ -23,8 +23,11 @@ interface TitleProps {
 
 interface ContentProps {
   children: string | React.ReactNode,
-  align?: string,
+  horizontal?: string,
+  vertical?: string,
   size?: string,
+  width?: string,
+  height?: string,
 }
 
 interface LayoutProps {
@@ -37,4 +40,21 @@ interface ControlProps {
   prov: () => void,
   color: string,
   controlBar?: string,
+}
+
+interface FigureProps {
+  backgroundColor?: string,
+  color?: string,
+  width?: string,
+  height?: string,
+  borderColor?: string,
+  borderWidth?: string,
+  children?: string | React.ReactNode,
+}
+
+interface TriangleProps {
+  color?: string,
+  size: string,
+  height: string,
+  children?: string | React.ReactNode,
 }
