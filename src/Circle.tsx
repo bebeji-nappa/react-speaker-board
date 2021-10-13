@@ -5,7 +5,7 @@ const Circle: React.VFC<FigureProps> = ({ children, color = "black", width = "10
   return (
     <>
       {children ? 
-        <div className="cicle" style={{ backgroundColor: color, width: `${width}px`, height: `${height}px`, border: `solid ${borderWidth}px ${borderColor}` }}>
+        <div className="circle" style={{ backgroundColor: color, width: `${width}px`, height: `${height}px`, border: `solid ${borderWidth}px ${borderColor}` }}>
           {children}
         </div> :
         <div className="circle" style={{ backgroundColor: color, width: `${width}px`, height: `${height}px`, border: `solid ${borderWidth}px ${borderColor}` }}></div>
