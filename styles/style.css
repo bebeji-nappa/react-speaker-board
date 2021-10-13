@@ -44,23 +44,32 @@
   font-weight: bold;
   margin: 0;
   white-space: pre-wrap;
-}
-
-.center {
   display: flex;
   flex-direction: column;
+}
+
+.horizontal-center {
   align-items: center;
 }
 
-.left {
-  display: flex;
-  flex-direction: column;
+.horizontal-left {
   align-items: flex-start;
 }
 
-.right {
-  display: flex;
+.horizontal-right {
   align-items: flex-end;
+}
+
+.vertical-center {
+  justify-content: center;
+}
+
+.vertical-left {
+  justify-content: flex-start;
+}
+
+.vertical-right {
+  justify-content: flex-end;
 }
 
 .size-xsmall {

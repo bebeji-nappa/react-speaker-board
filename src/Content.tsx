@@ -1,10 +1,16 @@
 import * as React from "react";
 import "./types"
 
-const alignValue = [
+const horizontalValue = [
   "left",
   "center",
   "right"
+]
+
+const verticalValue = [
+  "up",
+  "center",
+  "down"
 ]
 
 const sizeValue = [
@@ -17,9 +23,18 @@ const sizeValue = [
   "xxxlarge",
 ]
 
-const Content:React.VFC<ContentProps> = ({children, align = "left", size = "medium"}) => {
+const Content:React.VFC<ContentProps> = ({children, vertical="up", horizontal = "left", size = "medium", width="auto", height="auto"}) => {
   return (
-    <div className={`Content${alignValue.includes(align) && align ? ` ${align}` : ""}${sizeValue.includes(size) && size ? ` size-${size}` : ""}`}>{children}</div>
+    <div className={
+      `Content${
+        horizontalValue.includes(horizontal) && horizontal ? ` horizontal-${horizontal}` : ""}${
+        verticalValue.includes(vertical) && vertical ? ` vertical-${vertical}` : ""}${
+        sizeValue.includes(size) && size ? ` size-${size}` : ""}`
+      }
+      style={{ width: width, height: height}}  
+    >
+      {children}
+    </div>
   )
 }
 

@@ -23,8 +23,11 @@ interface TitleProps {
 
 interface ContentProps {
   children: string | React.ReactNode,
-  align?: string,
+  horizontal?: string,
+  vertical?: string,
   size?: string,
+  width?: string,
+  height?: string,
 }
 
 interface LayoutProps {
