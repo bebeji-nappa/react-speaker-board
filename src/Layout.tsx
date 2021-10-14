@@ -1,12 +1,8 @@
 import * as React from "react";
-import "./types"
+import "./types";
 
 const Layout: React.VFC<LayoutProps> = ({ children, layout }) => {
-  return (
-    <div className={`board ${layout}`}>
-      {children}
-    </div>
-  )
-}
+  return <div className={`board ${layout}`}>{children}</div>;
+};
 
-export default Layout
+export default Layout;

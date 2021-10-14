@@ -1,23 +1,23 @@
 import * as React from "react";
-import "./types"
+import "./types";
 
-const themeValue = [
-  "default",
-  "sunset",
-  "malinka",
-  "moon",
-  "darkblue",
-  "sky",
-  "green",
-  "dark"
-]
+const themeValue = ["default", "sunset", "malinka", "moon", "darkblue", "sky", "green", "dark"];
 
-const Theme:React.VFC<ThemeProps> = ({themeColor = "default", textColor = "black", children }) => {
+const Theme: React.VFC<ThemeProps> = ({
+  themeColor = "default",
+  textColor = "black",
+  children,
+}) => {
   return (
-    <div className={`theme-wrap${themeValue.includes(themeColor) ? ` ${themeColor}-theme` : "default"}`} style={{ color: textColor }}>
+    <div
+      className={`theme-wrap${
+        themeValue.includes(themeColor) ? ` ${themeColor}-theme` : "default"
+      }`}
+      style={{ color: textColor }}
+    >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Theme
+export default Theme;
