@@ -159,8 +159,8 @@ button {
   flex-direction: column;
 }
 
-/* MainTitle */
-.MainTitle {
+/* Title */
+.Title {
   text-align: center;
   font-weight: bold;
   margin: 0;
@@ -212,8 +212,8 @@ button {
   font-size: 4.375rem;
 }
 
-/* SectionTitle */
-.SectionTitle {
+/* Text */
+.Text {
   text-align: center;
   font-weight: bold;
   margin: 0;
