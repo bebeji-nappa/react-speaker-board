@@ -76,7 +76,6 @@ import ReactDOM from 'react-dom'
 import { ReactSpeakerBoard } from 'react-speaker-board'
 import 'react-speaker-board/styles/style.css'
 import { Slide } from './slide'
-import "./reset.css"
 
 ReactDOM.render(
   <ReactSpeakerBoard slide={Slide} mode="slide" />,
