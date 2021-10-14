@@ -17,11 +17,11 @@ const sizeValue = [
   "xxxlarge",
 ]
 
-const Title:React.VFC<TitleProps> = ({children, textAlign = "left", size = "xxxlarge"}) => {
+const Title:React.VFC<TitleProps> = ({children, textAlign = "left", textSize = "xxxlarge"}) => {
   return (
     <h1 
       className={
-        `SectionTitle${alignValue.includes(textAlign) && textAlign ? ` ${textAlign}` : ""}${sizeValue.includes(size) && size ? ` size-${size}` : "xxxlarge"}`
+        `SectionTitle${alignValue.includes(textAlign) && textAlign ? ` ${textAlign}` : ""}${sizeValue.includes(textSize) && textSize ? ` size-${textSize}` : "xxxlarge"}`
       }
     >
       {children}

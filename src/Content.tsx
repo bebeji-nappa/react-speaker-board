@@ -23,13 +23,13 @@ const sizeValue = [
   "xxxlarge",
 ]
 
-const Content:React.VFC<ContentProps> = ({children, vertical="up", horizontal = "left", size = "medium", width="auto", height="auto"}) => {
+const Content:React.VFC<ContentProps> = ({children, vertical="up", horizontal = "left", textSize = "medium", width="auto", height="auto"}) => {
   return (
     <div className={
       `Content${
         horizontalValue.includes(horizontal) && horizontal ? ` horizontal-${horizontal}` : ""}${
         verticalValue.includes(vertical) && vertical ? ` vertical-${vertical}` : ""}${
-        sizeValue.includes(size) && size ? ` size-${size}` : ""}`
+        sizeValue.includes(textSize) && textSize ? ` size-${textSize}` : ""}`
       }
       style={{ width: width, height: height}}  
     >

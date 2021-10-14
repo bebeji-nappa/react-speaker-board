@@ -18,14 +18,14 @@ interface ThemeProps {
 interface TitleProps {
   children: string | React.ReactNode,
   textAlign?: string,
-  size?: string,
+  textSize?: string,
 }
 
 interface ContentProps {
   children: string | React.ReactNode,
   horizontal?: string,
   vertical?: string,
-  size?: string,
+  textSize?: string,
   width?: string,
   height?: string,
 }
