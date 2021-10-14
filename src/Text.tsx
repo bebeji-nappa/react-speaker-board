@@ -5,7 +5,7 @@ const alignValue = ["left", "center", "right"];
 
 const sizeValue = ["xsmall", "small", "medium", "large", "xlarge", "xxlarge", "xxxlarge"];
 
-const Title: React.VFC<TextProps> = ({ children, textAlign = "left", textSize = "medium" }) => {
+const Text: React.VFC<TextProps> = ({ children, textAlign = "left", textSize = "medium" }) => {
   return (
     <p
       className={`Text${alignValue.includes(textAlign) && textAlign ? ` ${textAlign}` : ""}${
@@ -17,4 +17,4 @@ const Title: React.VFC<TextProps> = ({ children, textAlign = "left", textSize = 
   );
 };
 
-export default Title;
+export default Text;
