@@ -30,11 +30,11 @@
   animation: fadeIn 0.2s ease 0.3s 1 normal;
 }
 @keyframes fadeIn {
-  0% { 
-    opacity: 0
+  0% {
+    opacity: 0;
   }
   100% {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -109,15 +109,15 @@
 }
 
 .background-none {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .background-light {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .background-dark {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .Control {
@@ -320,7 +320,6 @@ button {
 /* Figure */
 .square {
   display: block;
-
 }
 
 .circle {

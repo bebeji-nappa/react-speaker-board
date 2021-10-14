@@ -1,41 +1,32 @@
 import * as React from "react";
-import "./types"
+import "./types";
 
-const horizontalValue = [
-  "left",
-  "center",
-  "right"
-]
+const horizontalValue = ["left", "center", "right"];
 
-const verticalValue = [
-  "up",
-  "center",
-  "down"
-]
+const verticalValue = ["up", "center", "down"];
 
-const sizeValue = [
-  "xsmall",
-  "small",
-  "medium",
-  "large",
-  "xlarge",
-  "xxlarge",
-  "xxxlarge",
-]
+const sizeValue = ["xsmall", "small", "medium", "large", "xlarge", "xxlarge", "xxxlarge"];
 
-const Content:React.VFC<ContentProps> = ({children, vertical="up", horizontal = "left", textSize = "medium", width="auto", height="auto"}) => {
+const Content: React.VFC<ContentProps> = ({
+  children,
+  vertical = "up",
+  horizontal = "left",
+  textSize = "medium",
+  width = "auto",
+  height = "auto",
+}) => {
   return (
-    <div className={
-      `Content${
-        horizontalValue.includes(horizontal) && horizontal ? ` horizontal-${horizontal}` : ""}${
-        verticalValue.includes(vertical) && vertical ? ` vertical-${vertical}` : ""}${
-        sizeValue.includes(textSize) && textSize ? ` size-${textSize}` : ""}`
-      }
-      style={{ width: width, height: height}}  
+    <div
+      className={`Content${
+        horizontalValue.includes(horizontal) && horizontal ? ` horizontal-${horizontal}` : ""
+      }${verticalValue.includes(vertical) && vertical ? ` vertical-${vertical}` : ""}${
+        sizeValue.includes(textSize) && textSize ? ` size-${textSize}` : ""
+      }`}
+      style={{ width: width, height: height }}
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;

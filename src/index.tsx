@@ -5,14 +5,14 @@ import Content from "./Content";
 import Spacer from "./Spacer";
 import Layout from "./Layout";
 import Theme from "./Theme";
-import Square from "./Square"
-import Circle from "./Circle"
-import TriangleUp from "./TriangleUp"
-import TriangleRight from "./TriangleRight"
-import TriangleDown from "./TriangleDown"
-import TriangleLeft from "./TriangleLeft"
+import Square from "./Square";
+import Circle from "./Circle";
+import TriangleUp from "./TriangleUp";
+import TriangleRight from "./TriangleRight";
+import TriangleDown from "./TriangleDown";
+import TriangleLeft from "./TriangleLeft";
 
-export { 
+export {
   ReactSpeakerBoard as ReactSpeakerBoard,
   Title as Title,
   Content as Content,
@@ -26,5 +26,4 @@ export {
   TriangleDown as TriangleDown,
   TriangleLeft as TriangleLeft,
   Text as Text,
-
-}
+};
