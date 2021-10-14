@@ -21,6 +21,12 @@ interface TitleProps {
   textSize?: string,
 }
 
+interface TextProps {
+  children: string | React.ReactNode,
+  textAlign?: string,
+  textSize?: string,
+}
+
 interface ContentProps {
   children: string | React.ReactNode,
   horizontal?: string,

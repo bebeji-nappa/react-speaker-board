@@ -10,7 +10,7 @@ $ yarn add react-speaker-board
 It create slide component.
 ```js
 import React from 'react'
-import { Title, Content, Spacer, Layout, Theme } from 'react-speaker-board'
+import { Title, Text, Content, Spacer, Layout, Theme } from 'react-speaker-board'
 
 const Subject = () => {
   return (
@@ -19,9 +19,7 @@ const Subject = () => {
         <Title textAlign="center">React Speaker Board</Title>
         <Spacer />
         <Content horizontal="center">
-          <span style={{ textAlign: "center" }}>
-            Easily create presentation board using React.
-          </span>
+          <Text textAlign="center">Easily create presentation board using React.</Text>
         </Content>
       </Layout>
     </Theme>
@@ -40,7 +38,7 @@ const Concept = () => {
         <Spacer />
         <Spacer />
         <Content horizontal="center">
-          <Content horizontal="left" size="xlarge">
+          <Content horizontal="left" teztSize="xlarge">
             <li>Easy to make</li>
             <li>Easy to customize</li>
             <li>Abundant theme colors</li>

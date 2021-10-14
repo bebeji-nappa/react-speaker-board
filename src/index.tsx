@@ -1,5 +1,6 @@
 import ReactSpeakerBoard from "./ReactSpeakerBoard";
 import Title from "./Title";
+import Text from "./Text";
 import Content from "./Content";
 import Spacer from "./Spacer";
 import Layout from "./Layout";
@@ -24,5 +25,6 @@ export {
   TriangleRight as TriangleRight,
   TriangleDown as TriangleDown,
   TriangleLeft as TriangleLeft,
+  Text as Text,
 
 }
