@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReactSpeakerBoard component should be correctly rendered 1`] = `
+<div
+  className="slide"
+>
+  <div />
+  <div
+    className="Control-wrap background-none"
+  >
+    <div
+      className="Control"
+    >
+      <button
+        onClick={[Function]}
+      >
+        <svg
+          className="slide-button"
+          fill="none"
+          height="25px"
+          viewBox="0 0 291 338"
+          width="25px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 169L291 0.991089V337.009L0 169Z"
+            fill="#71a3e3"
+          />
+        </svg>
+      </button>
+      <button
+        onClick={[Function]}
+      >
+        <svg
+          className="slide-button"
+          fill="none"
+          height="25px"
+          viewBox="0 0 291 338"
+          width="25px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M291 169L0 337.009V0.991074L291 169Z"
+            fill="#71a3e3"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
