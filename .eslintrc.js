@@ -1,28 +1,27 @@
-module.exports = {
+exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true
   },
   extends: [
     "plugin:react/recommended",
-    "plugin:import/typescript",
-    "plugin:import/errors",
-    "plugin:import/warnings",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 2020,
+    ecmaVersion: 2021,
     project: "./tsconfig.eslint.json",
     sourceType: "module",
+    ecmaFeatures: {
+      jsx: true,
+      modules: true
+    },
     tsconfigRootDir: __dirname,
   },
-  plugins: ["@typescript-eslint", "import", "react", "react-hooks"],
+  plugins: ["@typescript-eslint", "react", "react-hooks"],
   root: true,
   rules: {
     "@typescript-eslint/no-unused-vars": "off",
