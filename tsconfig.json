@@ -3,6 +3,7 @@
     "sourceMap": true,
     "target": "esnext",
     "module": "commonjs",
+    "esModuleInterop": true,
     "jsx": "react",
     "strict": true,
     "declaration": true,
