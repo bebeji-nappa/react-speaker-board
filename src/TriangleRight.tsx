@@ -2,7 +2,6 @@ import * as React from "react";
 import "./types";
 
 const TriangleRight: React.VFC<TriangleProps> = ({ children, height, color = "black", size }) => {
-  console.log(height);
   return (
     <>
       {children ? (
