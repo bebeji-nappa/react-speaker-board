@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component should be correctly rendered 1`] = `
+<h1
+  className="Title left size-xxxlarge"
+>
+  title
+</h1>
+`;

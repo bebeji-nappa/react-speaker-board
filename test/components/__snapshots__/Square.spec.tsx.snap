@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Square component should be correctly rendered 1`] = `
+<div
+  className="square"
+  style={
+    Object {
+      "backgroundColor": "black",
+      "border": "solid 0px white",
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <div />
+</div>
+`;

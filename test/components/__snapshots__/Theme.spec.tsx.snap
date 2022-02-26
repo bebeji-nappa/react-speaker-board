@@ -12,16 +12,3 @@ exports[`Theme component should be correctly rendered 1`] = `
   <div />
 </div>
 `;
-
-exports[`Theme should be rendered 1`] = `
-<div
-  className="theme-wrap sky-theme"
-  style={
-    Object {
-      "color": "white",
-    }
-  }
->
-  <div />
-</div>
-`;
