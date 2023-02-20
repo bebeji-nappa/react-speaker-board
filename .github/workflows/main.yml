@@ -1,0 +1,19 @@
+name: Frontend Test
+run-name: Test ESLint and Prettier.
+on: [push]
+jobs:
+  Lint-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set Node.js 14.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+      - name: Yarn install
+        run: yarn install
+      - name: ESLint
+        run: yarn lint
+      - name: Jest Test
+        run: yarn test

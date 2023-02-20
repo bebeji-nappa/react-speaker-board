@@ -1,5 +1,5 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import * as React from "react";
+import * as renderer from "react-test-renderer";
 import { Circle } from "../../src";
 
 describe("Circle component", () => {
@@ -7,9 +7,9 @@ describe("Circle component", () => {
     const component = renderer.create(
       <Circle>
         <div></div>
-      </Circle>
+      </Circle>,
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});

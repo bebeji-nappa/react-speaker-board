@@ -4,7 +4,7 @@ exports[`TriangleUp component should be correctly rendered 1`] = `
 <div
   className="triangle"
   style={
-    Object {
+    {
       "borderBottom": "40px solid black",
       "borderLeft": "80px solid transparent",
       "borderRight": "80px solid transparent",
