@@ -1,5 +1,5 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import * as React from "react";
+import * as renderer from "react-test-renderer";
 import { Square } from "../../src";
 
 describe("Square component", () => {
@@ -7,9 +7,9 @@ describe("Square component", () => {
     const component = renderer.create(
       <Square>
         <div></div>
-      </Square>
+      </Square>,
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});

@@ -1,5 +1,5 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import * as React from "react";
+import * as renderer from "react-test-renderer";
 import { Layout } from "../../src";
 
 describe("Layout component", () => {
@@ -7,9 +7,9 @@ describe("Layout component", () => {
     const component = renderer.create(
       <Layout layout="subject">
         <div></div>
-      </Layout>
+      </Layout>,
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});

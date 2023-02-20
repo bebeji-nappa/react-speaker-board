@@ -1,8 +1,8 @@
-exports = {
+module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true
+    jest: true,
   },
   extends: [
     "plugin:react/recommended",
@@ -17,7 +17,7 @@ exports = {
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
-      modules: true
+      modules: true,
     },
     tsconfigRootDir: __dirname,
   },

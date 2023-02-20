@@ -4,7 +4,7 @@ exports[`Content component should be correctly rendered 1`] = `
 <div
   className="Content horizontal-left vertical-up size-medium"
   style={
-    Object {
+    {
       "height": "auto",
       "width": "auto",
     }

@@ -1,5 +1,5 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import * as React from "react";
+import * as renderer from "react-test-renderer";
 import { Theme } from "../../src";
 
 describe("Theme component", () => {
@@ -7,9 +7,9 @@ describe("Theme component", () => {
     const component = renderer.create(
       <Theme themeColor="sky" textColor="white">
         <div></div>
-      </Theme>
+      </Theme>,
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});

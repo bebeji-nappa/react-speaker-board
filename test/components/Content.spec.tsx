@@ -1,5 +1,5 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import * as React from "react";
+import * as renderer from "react-test-renderer";
 import { Content } from "../../src";
 
 describe("Content component", () => {
@@ -7,9 +7,9 @@ describe("Content component", () => {
     const component = renderer.create(
       <Content>
         <div></div>
-      </Content>
+      </Content>,
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-})
+});
