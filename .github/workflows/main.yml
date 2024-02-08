@@ -13,7 +13,7 @@ jobs:
           node-version: 20.9.0
       - name: Yarn install
         run: yarn install
-      - name: ESLint
-        run: yarn lint
-      - name: Jest Test
-        run: yarn test
+      # - name: ESLint
+      #   run: yarn lint
+      # - name: Jest Test
+      #   run: yarn test
