@@ -1,6 +1,6 @@
 {
   "name": "react-speaker-board",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "Easily create presentation board using React.",
   "main": "src/index.tsx",
   "type": "module",
@@ -47,6 +47,8 @@
   "dependencies": {
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
