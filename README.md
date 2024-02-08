@@ -3,20 +3,30 @@
 ![npm](https://img.shields.io/npm/v/react-speaker-board)
 ![NPM](https://img.shields.io/npm/dw/react-speaker-board)
 
-Easily create presentation board using React.
+Easily create presentation board using React Hooks.
 
 ## Quick Usage
 It install react-speaker-board running this comand.
+
 ```sh
 $ yarn add react-speaker-board
 ```
 
-It create slide component.
-```js
+It create slide components.
+```jsx
 import React from 'react'
-import { Title, Text, Content, Spacer, Layout, Theme } from 'react-speaker-board'
+import { useReactSpeakerBoard } from 'react-speaker-board' // Import useReactSpeakerBoard hooks.
 
 const Subject = () => {
+  const {
+    Title,
+    Content,
+    Spacer,
+    Layout,
+    Theme,
+    Text,
+  } = useReactSpeakerBoard();
+
   return (
     <Theme themeColor="sky" textColor="white">
       <Layout layout="subject">
@@ -31,6 +41,14 @@ const Subject = () => {
 }
 
 const Concept = () => {
+  const {
+    Title,
+    Content,
+    Spacer,
+    Layout,
+    Theme,
+  } = useReactSpeakerBoard();
+
   return (
     <Theme themeColor="sky" textColor="white">
       <Layout layout="section">
@@ -42,7 +60,7 @@ const Concept = () => {
         <Spacer />
         <Spacer />
         <Content horizontal="center">
-          <Content horizontal="left" teztSize="xlarge">
+          <Content horizontal="left" textSize="xlarge">
             <li>Easy to make</li>
             <li>Easy to customize</li>
             <li>Abundant theme colors</li>
@@ -54,6 +72,12 @@ const Concept = () => {
 }
 
 const Documentation = () => {
+  const {
+    Title,
+    Layout,
+    Theme,
+  } = useReactSpeakerBoard();
+
   return (
     <Theme themeColor="sky" textColor="white">
       <Layout layout="subject">
@@ -73,22 +97,21 @@ export const Slide = [
 
 ```
 
-It show slide compoent in page using `ReactSpeakerBoard` Component.
-```js
+It show slide compoents in page using `ReactSpeakerBoard` Component.
+```jsx
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { ReactSpeakerBoard } from 'react-speaker-board'
-import 'react-speaker-board/styles/style.css'
 import { Slide } from './slide'
 
-ReactDOM.render(
-  <ReactSpeakerBoard slide={Slide} mode="slide" />,
-  document.getElementById('root')
-);
+const Home = () => {
+  return <ReactSpeakerBoard slide={Slide} mode="slide" />
+};
+
+default export Home;
 ```
 
 ## Documentation
-- [Documentation(Japanese) - React Speaker Board](https://react-speaker-board-website.vercel.app/docs/ja/introduction)
+I'm creating this documentation now....
 
 ## License
 MIT

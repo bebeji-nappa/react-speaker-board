@@ -1,7 +1,7 @@
-import * as React from "react";
+import React from "react";
 import "./types";
 
-const Square: React.VFC<FigureProps> = ({
+const Square: React.FC<FigureProps> = ({
   children,
   color = "black",
   width = "100",

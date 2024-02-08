@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 import * as renderer from "react-test-renderer";
-import { TriangleDown } from "../../src";
+import { TriangleDown } from "..";
 
 describe("TriangleDown component", () => {
   it("should be correctly rendered", () => {

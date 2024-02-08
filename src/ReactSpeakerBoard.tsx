@@ -1,9 +1,10 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import "./types";
+import "../styles/style.css";
 
 const modeValue = ["slide", "inlineSlide"];
 
-const ReactSpeakerBoard: React.VFC<SpeakerBoardProps> = ({
+const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
   mode = "slide",
   slide,
   controlTheme = "#71a3e3",
@@ -11,8 +12,8 @@ const ReactSpeakerBoard: React.VFC<SpeakerBoardProps> = ({
   width = "80vw",
   height = "80vh",
 }) => {
-  const [view, setView] = React.useState<JSX.Element>(slide[0]);
-  const [index, setIndex] = React.useState<number>(0);
+  const [view, setView] = useState<JSX.Element>(slide[0]);
+  const [index, setIndex] = useState<number>(0);
   const max = slide.length - 1;
 
   const NextSlide = () => {
@@ -29,7 +30,7 @@ const ReactSpeakerBoard: React.VFC<SpeakerBoardProps> = ({
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     setView(slide[Number(index)]);
   }, [index]);
 

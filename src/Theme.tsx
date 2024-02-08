@@ -1,9 +1,9 @@
-import * as React from "react";
+import React from "react";
 import "./types";
 
 const themeValue = ["default", "sunset", "malinka", "moon", "darkblue", "sky", "green", "dark"];
 
-const Theme: React.VFC<ThemeProps> = ({
+const Theme: React.FC<ThemeProps> = ({
   themeColor = "default",
   textColor = "black",
   children,

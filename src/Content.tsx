@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import "./types";
 
 const horizontalValue = ["left", "center", "right"];
@@ -7,7 +7,7 @@ const verticalValue = ["up", "center", "down"];
 
 const sizeValue = ["xsmall", "small", "medium", "large", "xlarge", "xxlarge", "xxxlarge"];
 
-const Content: React.VFC<ContentProps> = ({
+const Content: React.FC<ContentProps> = ({
   children,
   vertical = "up",
   horizontal = "left",

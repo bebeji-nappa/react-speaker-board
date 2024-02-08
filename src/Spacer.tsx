@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 
-const Spacer: React.VFC = () => {
+const Spacer: React.FC = () => {
   return <div className="spacer"></div>;
 };
 

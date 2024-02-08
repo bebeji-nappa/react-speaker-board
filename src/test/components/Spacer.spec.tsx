@@ -1,10 +1,10 @@
-import * as React from "react";
+import React from "react";
 import * as renderer from "react-test-renderer";
-import { Text } from "../../src";
+import { Spacer } from "../../src";
 
-describe("Text component", () => {
+describe("Spacer component", () => {
   it("should be correctly rendered", () => {
-    const component = renderer.create(<Text>text</Text>);
+    const component = renderer.create(<Spacer />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

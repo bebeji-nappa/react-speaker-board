@@ -1,7 +1,7 @@
-import * as React from "react";
+import React from "react";
 import "./types";
 
-const TriangleUp: React.VFC<TriangleProps> = ({ children, height, color = "black", size }) => {
+const TriangleUp: React.FC<TriangleProps> = ({ children, height, color = "black", size }) => {
   return (
     <>
       {children ? (
