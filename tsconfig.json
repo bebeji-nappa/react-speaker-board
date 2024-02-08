@@ -8,6 +8,8 @@
     "declaration": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "rootDir": "./src/",
     "outDir": "./dist/",
     "lib": [
       "ES2021",
@@ -15,6 +17,10 @@
     ],
   },
   "files": [
-    "src/index.tsx"
-  ]
+    "src/index.tsx",
+  ],
+  "exclude": [
+    "test/",
+    "node_modules",
+  ],
 }

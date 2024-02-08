@@ -1,17 +1,17 @@
 {
   "name": "react-speaker-board",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Easily create presentation board using React.",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "src/index.tsx",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "lint": "yarn lint:eslint && yarn lint:prettier",
-    "lint:fix": "yarn lint:eslint:fix && yarn lint:prettier:fix",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:fix": "pnpm lint:eslint:fix && pnpm lint:prettier:fix",
     "lint:eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:eslint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:prettier": "yarn prettier --check './**/*.{js,jsx,ts,tsx,css}'",
-    "lint:prettier:fix": "yarn prettier --write './**/*.{js,jsx,ts,tsx,css}'",
+    "lint:prettier": "pnpm prettier --check './**/*.{js,jsx,ts,tsx,css}'",
+    "lint:prettier:fix": "pnpm prettier --write './**/*.{js,jsx,ts,tsx,css}'",
     "test": "jest"
   },
   "keywords": [
@@ -22,7 +22,7 @@
     "type": "git",
     "url": "https://github.com/bebeji-nappa/react-speaker-board.git"
   },
-  "author": "nappa <masa.yanagawa721@gmail.com> (https://twitter.com/nappa_bebeji)",
+  "author": "nappa <masa.yanagawa721@gmail.com> (https://twitter.com/bebeji_nappa)",
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-env": "^7.23.9",

@@ -1,13 +1,13 @@
-import * as React from "react";
+import React from "react";
 import * as renderer from "react-test-renderer";
-import { Theme } from "../../src";
+import { Circle } from "../../src";
 
-describe("Theme component", () => {
+describe("Circle component", () => {
   it("should be correctly rendered", () => {
     const component = renderer.create(
-      <Theme themeColor="sky" textColor="white">
+      <Circle>
         <div></div>
-      </Theme>,
+      </Circle>,
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();

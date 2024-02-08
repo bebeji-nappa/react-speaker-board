@@ -42,7 +42,7 @@ const Concept = () => {
         <Spacer />
         <Spacer />
         <Content horizontal="center">
-          <Content horizontal="left" teztSize="xlarge">
+          <Content horizontal="left" textSize="xlarge">
             <li>Easy to make</li>
             <li>Easy to customize</li>
             <li>Abundant theme colors</li>
