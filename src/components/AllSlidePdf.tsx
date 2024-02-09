@@ -1,7 +1,6 @@
 import React, { useCallback } from "react";
 import { useReactSpeakerBoardPdf } from "../hooks/useReactSpeakerBoardPdf";
 import "../types";
-import "../../styles/ReactSpeakerBoard.css";
 
 const AllSlidePdf: React.FC<AllSlideProps> = ({ slide }) => {
   const { downloadPdf } = useReactSpeakerBoardPdf();

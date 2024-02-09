@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../types";
-import "../../styles/ReactSpeakerBoard.css";
 
 const modeValue = ["slide", "inlineSlide"];
 
