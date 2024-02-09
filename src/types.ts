@@ -11,7 +11,7 @@ interface SpeakerBoardProps {
 interface ThemeProps {
   themeColor?: string;
   textColor?: string;
-  animate?: string;
+  customThemeColor?: string;
   children: React.ReactNode;
 }
 

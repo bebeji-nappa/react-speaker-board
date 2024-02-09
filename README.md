@@ -14,19 +14,12 @@ $ yarn add react-speaker-board
 
 It create slide components.
 ```jsx
+"use client"
+
 import React from 'react'
-import { useReactSpeakerBoard } from 'react-speaker-board' // Import useReactSpeakerBoard hooks.
+import { ReactSpeakerBoard, Title, Content, Spacer, Layout, Theme, Text } from "react-speaker-board";
 
 const Subject = () => {
-  const {
-    Title,
-    Content,
-    Spacer,
-    Layout,
-    Theme,
-    Text,
-  } = useReactSpeakerBoard();
-
   return (
     <Theme themeColor="sky" textColor="white">
       <Layout layout="subject">
@@ -41,14 +34,6 @@ const Subject = () => {
 }
 
 const Concept = () => {
-  const {
-    Title,
-    Content,
-    Spacer,
-    Layout,
-    Theme,
-  } = useReactSpeakerBoard();
-
   return (
     <Theme themeColor="sky" textColor="white">
       <Layout layout="section">
@@ -111,7 +96,7 @@ default export Home;
 ```
 
 ## Documentation
-I'm creating this documentation now....
+https://react-speaker-board-website-phi.vercel.app/docs/ja/introduction
 
 ## License
 MIT

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./types";
-import "../styles/style.css";
+import "../types";
+import "../../styles/ReactSpeakerBoard.css";
 
 const modeValue = ["slide", "inlineSlide"];
 
@@ -9,8 +9,8 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
   slide,
   controlTheme = "#71a3e3",
   controlBar = "none",
-  width = "80vw",
-  height = "80vh",
+  width = "100vw",
+  height = "100vh",
 }) => {
   const [view, setView] = useState<JSX.Element>(slide[0]);
   const [index, setIndex] = useState<number>(0);
