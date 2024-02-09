@@ -1,12 +1,7 @@
 import React from "react";
-import "./types";
+import "../types";
 
-const TriangleLeft: React.FC<TriangleProps> = ({
-  children,
-  height,
-  color = "black",
-  size = "100",
-}) => {
+const TriangleRight: React.FC<TriangleProps> = ({ children, height, color = "black", size }) => {
   return (
     <>
       {children ? (
@@ -16,8 +11,8 @@ const TriangleLeft: React.FC<TriangleProps> = ({
             width: "0",
             height: "0",
             borderTop: `${size}px solid transparent`,
-            borderRight: `${height}px solid ${color}`,
             borderBottom: `${size}px solid transparent`,
+            borderLeft: `${height}px solid ${color}`,
           }}
         >
           {children}
@@ -29,8 +24,8 @@ const TriangleLeft: React.FC<TriangleProps> = ({
             width: "0",
             height: "0",
             borderTop: `${size}px solid transparent`,
-            borderRight: `${height}px solid ${color}`,
             borderBottom: `${size}px solid transparent`,
+            borderLeft: `${height}px solid ${color}`,
           }}
         ></div>
       )}
@@ -38,4 +33,4 @@ const TriangleLeft: React.FC<TriangleProps> = ({
   );
 };
 
-export default TriangleLeft;
+export default TriangleRight;

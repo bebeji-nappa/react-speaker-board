@@ -2,8 +2,8 @@
   "name": "react-speaker-board",
   "version": "0.3.0",
   "description": "Easily create presentation board using React.",
-  "main": "src/index.tsx",
-  "type": "module",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "pnpm lint:eslint && pnpm lint:prettier",

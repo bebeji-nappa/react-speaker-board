@@ -1,5 +1,5 @@
 import React from "react";
-import "./types";
+import "../types";
 
 const alignValue = ["left", "center", "right"];
 

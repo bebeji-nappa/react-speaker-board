@@ -1,5 +1,5 @@
 import React from "react";
-import "./types";
+import "../types";
 
 const Layout: React.FC<LayoutProps> = ({ children, layout }) => {
   return <div className={`board ${layout}`}>{children}</div>;
