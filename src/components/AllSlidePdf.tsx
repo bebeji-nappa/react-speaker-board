@@ -3,10 +3,6 @@ import { useReactSpeakerBoardPdf } from "../hooks/useReactSpeakerBoardPdf";
 import "../types";
 import "../../styles/ReactSpeakerBoard.css";
 
-type AllSlideProps = {
-  slide: (() => JSX.Element)[];
-};
-
 const AllSlidePdf: React.FC<AllSlideProps> = ({ slide }) => {
   const { downloadPdf } = useReactSpeakerBoardPdf();
 

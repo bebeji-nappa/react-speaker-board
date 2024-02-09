@@ -64,3 +64,7 @@ interface TriangleProps {
   height: string;
   children?: string | React.ReactNode;
 }
+
+interface AllSlideProps {
+  slide: (() => JSX.Element)[];
+};
