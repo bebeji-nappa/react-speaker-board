@@ -1,8 +1,13 @@
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 export const useReactSpeakerBoardPdf = () => {
-  const downloadPdf = async (slide: (() => JSX.Element)[], fileName?: string, nextAction?: () => void, prevAction?: () => void) => {
+  const downloadPdf = async (
+    slide: (() => JSX.Element)[],
+    fileName?: string,
+    nextAction?: () => void,
+    prevAction?: () => void,
+  ) => {
     const slideLength = slide.length;
 
     if (prevAction) prevAction();
@@ -11,12 +16,12 @@ export const useReactSpeakerBoardPdf = () => {
     if (target === null) {
       console.error("The slide does not exist.");
       return;
-    };
-    
-    const { width, height } = await html2canvas(target)
+    }
+
+    const { width, height } = await html2canvas(target);
     const pdf = new jsPDF({
-      orientation: 'l',
-      unit: 'px',
+      orientation: "l",
+      unit: "px",
       format: [width / 5, height / 5],
     });
 
@@ -26,14 +31,14 @@ export const useReactSpeakerBoardPdf = () => {
         console.log(`slide-${i}`);
         console.error("The slide does not exist.");
         return;
-      };
-      const canvas = await html2canvas(target)
-      const imgData = canvas.toDataURL('image/svg', 1);
+      }
+      const canvas = await html2canvas(target);
+      const imgData = canvas.toDataURL("image/svg", 1);
       if (nextAction) nextAction();
-      pdf.addImage(imgData, 'SVG', 0, 0, canvas.width / 5, canvas.height / 5, `slide-${i}`);
+      pdf.addImage(imgData, "SVG", 0, 0, canvas.width / 5, canvas.height / 5, `slide-${i}`);
       if (i !== slideLength) pdf.addPage();
     }
     pdf.save(fileName ?? "reactspeakerboard.pdf");
   };
   return { downloadPdf };
-}
+};

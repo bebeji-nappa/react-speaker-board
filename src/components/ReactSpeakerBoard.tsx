@@ -18,7 +18,7 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
 
   const NextSlide = useCallback(() => {
     if (index !== max) {
-      setIndex(num => num + 1);
+      setIndex((num) => num + 1);
       if (mode === "fullScreenScroll") {
         virtuoso.current.scrollToIndex({ index: index + 1, behavior: "smooth" });
       }
@@ -27,26 +27,29 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
 
   const PrevSlide = useCallback(() => {
     if (index !== 0) {
-      setIndex(num => num - 1);
+      setIndex((num) => num - 1);
       if (mode === "fullScreenScroll") {
         virtuoso.current.scrollToIndex({ index: index - 1, behavior: "smooth" });
       }
     }
   }, [index, slide]);
 
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.key === "ArrowRight" || e.key === "Enter") {
-      NextSlide();
-    }
-    if (e.key === "ArrowLeft" || e.key === "Backspace") {
-      PrevSlide();
-    }
-    if (e.key === "Escape") {
-      setIndex(0);
-    }
-  }, [NextSlide, PrevSlide]);
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight" || e.key === "Enter") {
+        NextSlide();
+      }
+      if (e.key === "ArrowLeft" || e.key === "Backspace") {
+        PrevSlide();
+      }
+      if (e.key === "Escape") {
+        setIndex(0);
+      }
+    },
+    [NextSlide, PrevSlide],
+  );
 
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     useEvent(window, "keydown", handleKeyDown);
   }
 
@@ -54,7 +57,9 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
     <>
       {mode === "inlineSlide" ? (
         <div className={mode} style={{ width: `${width}`, height: `${height}` }}>
-          <div id={`slide-${index+1}`} style={{ width: `${width}`, height: `${height}` }}>{view()}</div>
+          <div id={`slide-${index + 1}`} style={{ width: `${width}`, height: `${height}` }}>
+            {view()}
+          </div>
           <div className={`Control-wrap Control-background-${controlBgColor}`}>
             <div className="Control">
               <button onClick={() => PrevSlide()}>
@@ -96,7 +101,7 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
             style={{ width: "100vw", height: "100vh", overflow: "hidden" }}
             data={slide}
             itemContent={(index, slide) => (
-              <div id={`slide-${index+1}`} style={{ width: "100vw", height: "100vh" }}>
+              <div id={`slide-${index + 1}`} style={{ width: "100vw", height: "100vh" }}>
                 {slide()}
               </div>
             )}

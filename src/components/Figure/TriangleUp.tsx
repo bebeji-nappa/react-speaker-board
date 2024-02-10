@@ -1,7 +1,12 @@
 import React from "react";
 import "../../types";
 
-const TriangleUp: React.FC<TriangleProps> = ({ children, height, color = "black", size = "100px" }) => {
+const TriangleUp: React.FC<TriangleProps> = ({
+  children,
+  height,
+  color = "black",
+  size = "100px",
+}) => {
   return (
     <>
       {children ? (

@@ -14,10 +14,8 @@ const Content: React.FC<ContentProps> = ({
   return (
     <div
       className={`Content${layout ? ` content-layout-${layout}` : ""}${
-        horizontal ? ` horizontal-${horizontal}` : ""}${
-        vertical ? ` vertical-${vertical}` : ""}${
-        textSize ? ` size-${textSize}` : ""
-      }`}
+        horizontal ? ` horizontal-${horizontal}` : ""
+      }${vertical ? ` vertical-${vertical}` : ""}${textSize ? ` size-${textSize}` : ""}`}
       style={{ width: width, height: height, gap: `${gap}` }}
     >
       {children}

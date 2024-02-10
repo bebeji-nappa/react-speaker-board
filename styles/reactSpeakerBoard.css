@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 /* Base */
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -302,9 +303,8 @@ button {
 .slide-code {
   background-color: #000042;
   border-radius: 10px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
-
 
 /* Theme */
 .theme-wrap {

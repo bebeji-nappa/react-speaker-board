@@ -69,7 +69,7 @@ interface TriangleProps {
 
 interface AllSlideProps {
   slide: (() => JSX.Element)[];
-};
+}
 
 interface ArrowLeftProps {
   width?: string;

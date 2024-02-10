@@ -9,7 +9,7 @@ const ArrowLeft: React.FC<ArrowLeftProps> = ({ width = "100px", color = "black" 
       <TriangleLeft height="50px" size="60px" color={color} />
       <Square width={width} height="50px" color={color} />
     </Content>
-  )
-}
+  );
+};
 
 export default ArrowLeft;
