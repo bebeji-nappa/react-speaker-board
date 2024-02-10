@@ -85,3 +85,11 @@ interface ArrowUpProps {
   height?: string;
   color?: string;
 }
+
+interface CodeProps {
+  children: string;
+  lang: string;
+  width?: string;
+  height?: string;
+  textSize?: string;
+}

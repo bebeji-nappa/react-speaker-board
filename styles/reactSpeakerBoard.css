@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 /* Base */
 
 html, body {
@@ -283,6 +285,15 @@ button {
   width: 100%;
   margin: 30px 0;
 }
+
+/* Code */
+.slide-code {
+  background-color: #000042;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Source Code Pro', monospace;
+}
+
 
 /* Theme */
 .theme-wrap {
