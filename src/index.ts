@@ -5,17 +5,17 @@ import Content from "./components/Content";
 import Spacer from "./components/Spacer";
 import Layout from "./components/Layout";
 import Theme from "./components/Theme";
-import Square from "./components/Square";
-import Circle from "./components/Circle";
-import TriangleUp from "./components/TriangleUp";
-import TriangleRight from "./components/TriangleRight";
-import TriangleDown from "./components/TriangleDown";
-import TriangleLeft from "./components/TriangleLeft";
+import Square from "./components/Figure/Square";
+import Circle from "./components/Figure/Circle";
+import TriangleUp from "./components/Figure/TriangleUp";
+import TriangleRight from "./components/Figure/TriangleRight";
+import TriangleDown from "./components/Figure/TriangleDown";
+import TriangleLeft from "./components/Figure/TriangleLeft";
 import AllSlidePdf from "./components/AllSlidePdf";
-import ArrowLeft from "./components/ArrowLeft";
-import ArrowRight from "./components/ArrowRight";
-import ArrowUp from "./components/ArrowUp";
-import ArrowDown from "./components/ArrowDown";
+import ArrowLeft from "./components/Figure/ArrowLeft";
+import ArrowRight from "./components/Figure/ArrowRight";
+import ArrowUp from "./components/Figure/ArrowUp";
+import ArrowDown from "./components/Figure/ArrowDown";
 
 export {
   ReactSpeakerBoard,

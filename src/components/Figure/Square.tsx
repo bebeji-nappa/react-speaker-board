@@ -1,7 +1,7 @@
 import React from "react";
-import "../types";
+import "../../types";
 
-const Circle: React.FC<FigureProps> = ({
+const Square: React.FC<FigureProps> = ({
   children,
   color = "black",
   width = "100",
@@ -13,7 +13,7 @@ const Circle: React.FC<FigureProps> = ({
     <>
       {children ? (
         <div
-          className="circle"
+          className="square"
           style={{
             backgroundColor: color,
             width: `${width}px`,
@@ -25,7 +25,7 @@ const Circle: React.FC<FigureProps> = ({
         </div>
       ) : (
         <div
-          className="circle"
+          className="square"
           style={{
             backgroundColor: color,
             width: `${width}px`,
@@ -38,4 +38,4 @@ const Circle: React.FC<FigureProps> = ({
   );
 };
 
-export default Circle;
+export default Square;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../types";
+import "../../types";
 
 const TriangleDown: React.FC<TriangleProps> = ({ children, height, color = "black", size }) => {
   return (
