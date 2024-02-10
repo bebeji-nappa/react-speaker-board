@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../types";
 
-const modeValue = ["slide", "inlineSlide"];
-
 const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
   mode = "slide",
   slide,
@@ -35,10 +33,10 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
 
   return (
     <>
-      {modeValue.includes(mode) && mode === "inlineSlide" ? (
+      {mode === "inlineSlide" ? (
         <div className={mode} style={{ width: `${width}`, height: `${height}` }}>
           {view}
-          <div className={`Control-wrap background-${controlBar}`}>
+          <div className={`Control-wrap Control-background-${controlBar}`}>
             <div className="Control">
               <button onClick={() => ProvSlide()}>
                 <svg
