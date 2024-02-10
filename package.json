@@ -1,6 +1,6 @@
 {
   "name": "react-speaker-board",
-  "version": "0.4.0-0",
+  "version": "0.4.0-1",
   "description": "Easily create presentation board using React.",
   "main": "./src/index.ts",
   "type": "module",
