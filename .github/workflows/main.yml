@@ -11,6 +11,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.9.0
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 8.15.1
       - name: Pnpm install
         run: pnpm install
       - name: ESLint
