@@ -6,7 +6,19 @@ html, body {
   margin: 0;
 }
 
-.slide {
+.fullScreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.fullScreenScroll {
   width: 100vw;
   height: 100vh;
   display: flex;
