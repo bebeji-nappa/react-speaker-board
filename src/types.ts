@@ -34,6 +34,8 @@ interface ContentProps {
   textSize?: string;
   width?: string;
   height?: string;
+  layout?: string;
+  gap?: string;
 }
 
 interface LayoutProps {

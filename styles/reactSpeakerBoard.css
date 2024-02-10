@@ -49,7 +49,14 @@ html, body {
   margin: 0;
   white-space: pre-wrap;
   display: flex;
+}
+
+.content-layout-vertical {
   flex-direction: column;
+}
+
+.content-layout-horizontal {
+  flex-direction: row;
 }
 
 .horizontal-center {
