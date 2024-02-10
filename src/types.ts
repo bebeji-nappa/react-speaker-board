@@ -1,11 +1,12 @@
 interface SpeakerBoardProps {
   mode?: "slide" | "inlineSlide";
   theme?: string;
-  controlTheme?: string;
+  controlArrowColor?: string;
   width?: string;
   height?: string;
-  controlBar?: "none" | "dark" | "light";
+  controlBgColor?: "none" | "dark" | "light";
   slide: (() => JSX.Element)[];
+  controlBar?: "all" | "arrow" | "keyboard";
 }
 
 interface ThemeProps {
