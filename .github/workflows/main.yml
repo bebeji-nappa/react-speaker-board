@@ -11,9 +11,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.9.0
-      - name: Yarn install
-        run: yarn install
-      # - name: ESLint
-      #   run: yarn lint
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 8.15.1
+      - name: Pnpm install
+        run: pnpm install
+      - name: ESLint
+        run: pnpm lint
       # - name: Jest Test
       #   run: yarn test

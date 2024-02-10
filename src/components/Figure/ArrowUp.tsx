@@ -9,7 +9,7 @@ const ArrowUp: React.FC<ArrowUpProps> = ({ height = "100px", color = "black" }) 
       <TriangleUp height="50px" size="60px" color={color} />
       <Square width="50px" height={height} color={color} />
     </Content>
-  )
-}
+  );
+};
 
 export default ArrowUp;

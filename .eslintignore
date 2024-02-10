@@ -1,4 +1,5 @@
 dist/
 .yarn/
 node_modules/
-
+src/test/
+example/

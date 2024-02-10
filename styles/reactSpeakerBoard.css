@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 /* Base */
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
-.slide {
+.fullScreen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.fullScreenScroll {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -290,9 +303,8 @@ button {
 .slide-code {
   background-color: #000042;
   border-radius: 10px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
-
 
 /* Theme */
 .theme-wrap {

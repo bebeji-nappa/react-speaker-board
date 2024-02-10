@@ -1,6 +1,6 @@
 {
   "name": "react-speaker-board",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "description": "Easily create presentation board using React.",
   "main": "./src/index.ts",
   "type": "module",
@@ -52,7 +52,8 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-virtuoso": "^4.6.3"
   },
   "volta": {
     "node": "20.9.0",

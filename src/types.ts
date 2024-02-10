@@ -1,12 +1,11 @@
 interface SpeakerBoardProps {
-  mode?: "slide" | "inlineSlide";
+  mode?: "fullScreen" | "inlineSlide" | "fullScreenScroll";
   theme?: string;
   controlArrowColor?: string;
   width?: string;
   height?: string;
   controlBgColor?: "none" | "dark" | "light";
   slide: (() => JSX.Element)[];
-  controlBar?: "all" | "arrow" | "keyboard";
 }
 
 interface ThemeProps {
@@ -70,7 +69,7 @@ interface TriangleProps {
 
 interface AllSlideProps {
   slide: (() => JSX.Element)[];
-};
+}
 
 interface ArrowLeftProps {
   width?: string;

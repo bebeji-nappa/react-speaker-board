@@ -9,7 +9,7 @@ const ArrowDown: React.FC<ArrowUpProps> = ({ height = "100px", color = "black" }
       <Square width="50px" height={height} color={color} />
       <TriangleDown height="50px" size="60px" color={color} />
     </Content>
-  )
-}
+  );
+};
 
 export default ArrowDown;

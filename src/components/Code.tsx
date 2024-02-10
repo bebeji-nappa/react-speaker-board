@@ -6,12 +6,17 @@ const Code: React.FC<CodeProps> = ({ children, lang, width, textSize, height, pa
   return (
     <code
       dangerouslySetInnerHTML={{
-        __html: hljs.highlight(children, {language: lang ?? "text"}).value,
+        __html: hljs.highlight(children, { language: lang ?? "text" }).value,
       }}
       className="slide-code"
-      style={{ width: width ? `${width}` : "auto", height: height ? `${height}` : "auto", fontSize: textSize ? `${textSize}` : "16px", padding: `${padding ?? "10px"}` }}
+      style={{
+        width: width ? `${width}` : "auto",
+        height: height ? `${height}` : "auto",
+        fontSize: textSize ? `${textSize}` : "16px",
+        padding: `${padding ?? "10px"}`,
+      }}
     />
   );
-}
+};
 
 export default Code;
