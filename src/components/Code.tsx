@@ -9,7 +9,7 @@ const Code: React.FC<CodeProps> = ({ children, lang, width, textSize, height, pa
         __html: hljs.highlight(children, {language: lang ?? "text"}).value,
       }}
       className="slide-code"
-      style={{ width: width ? `${width}px` : "100%", height: height ? `${height}px` : "auto", fontSize: textSize ? `${textSize}px` : "16px", padding: `${padding ?? "10px"}` }}
+      style={{ width: width ? `${width}` : "auto", height: height ? `${height}` : "auto", fontSize: textSize ? `${textSize}` : "16px", padding: `${padding ?? "10px"}` }}
     />
   );
 }

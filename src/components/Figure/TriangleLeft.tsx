@@ -5,7 +5,7 @@ const TriangleLeft: React.FC<TriangleProps> = ({
   children,
   height,
   color = "black",
-  size = "100",
+  size = "100px",
 }) => {
   return (
     <>
@@ -15,9 +15,9 @@ const TriangleLeft: React.FC<TriangleProps> = ({
           style={{
             width: "0",
             height: "0",
-            borderTop: `${size}px solid transparent`,
-            borderRight: `${height}px solid ${color}`,
-            borderBottom: `${size}px solid transparent`,
+            borderTop: `${size} solid transparent`,
+            borderRight: `${height} solid ${color}`,
+            borderBottom: `${size} solid transparent`,
           }}
         >
           {children}
@@ -28,9 +28,9 @@ const TriangleLeft: React.FC<TriangleProps> = ({
           style={{
             width: "0",
             height: "0",
-            borderTop: `${size}px solid transparent`,
-            borderRight: `${height}px solid ${color}`,
-            borderBottom: `${size}px solid transparent`,
+            borderTop: `${size} solid transparent`,
+            borderRight: `${height} solid ${color}`,
+            borderBottom: `${size} solid transparent`,
           }}
         ></div>
       )}

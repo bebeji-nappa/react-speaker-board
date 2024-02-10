@@ -18,7 +18,7 @@ const Content: React.FC<ContentProps> = ({
         vertical ? ` vertical-${vertical}` : ""}${
         textSize ? ` size-${textSize}` : ""
       }`}
-      style={{ width: width, height: height, gap: `${gap}px` }}
+      style={{ width: width, height: height, gap: `${gap}` }}
     >
       {children}
     </div>

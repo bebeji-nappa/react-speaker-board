@@ -1,7 +1,7 @@
 import React from "react";
 import "../../types";
 
-const TriangleUp: React.FC<TriangleProps> = ({ children, height, color = "black", size }) => {
+const TriangleUp: React.FC<TriangleProps> = ({ children, height, color = "black", size = "100px" }) => {
   return (
     <>
       {children ? (
@@ -10,9 +10,9 @@ const TriangleUp: React.FC<TriangleProps> = ({ children, height, color = "black"
           style={{
             width: "0",
             height: "0",
-            borderRight: `${size}px solid transparent`,
-            borderBottom: `${height}px solid ${color}`,
-            borderLeft: `${size}px solid transparent`,
+            borderRight: `${size} solid transparent`,
+            borderBottom: `${height} solid ${color}`,
+            borderLeft: `${size} solid transparent`,
           }}
         >
           {children}
@@ -23,9 +23,9 @@ const TriangleUp: React.FC<TriangleProps> = ({ children, height, color = "black"
           style={{
             width: "0",
             height: "0",
-            borderRight: `${size}px solid transparent`,
-            borderBottom: `${height}px solid ${color}`,
-            borderLeft: `${size}px solid transparent`,
+            borderRight: `${size} solid transparent`,
+            borderBottom: `${height} solid ${color}`,
+            borderLeft: `${size} solid transparent`,
           }}
         ></div>
       )}
