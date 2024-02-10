@@ -96,7 +96,7 @@ default export Home;
 ```
 
 ## Documentation
-https://react-speaker-board-website-phi.vercel.app/docs/ja/introduction
+https://react-speaker-board-website.vercel.app/docs/ja/introduction
 
 ## License
 MIT
