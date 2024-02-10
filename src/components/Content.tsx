@@ -1,12 +1,6 @@
 import React from "react";
 import "../types";
 
-const horizontalValue = ["left", "center", "right"];
-
-const verticalValue = ["up", "center", "down"];
-
-const sizeValue = ["xsmall", "small", "medium", "large", "xlarge", "xxlarge", "xxxlarge"];
-
 const Content: React.FC<ContentProps> = ({
   children,
   vertical = "up",
@@ -14,15 +8,17 @@ const Content: React.FC<ContentProps> = ({
   textSize = "medium",
   width = "auto",
   height = "auto",
+  layout = "vertical",
+  gap = "0",
 }) => {
   return (
     <div
-      className={`Content${
-        horizontalValue.includes(horizontal) && horizontal ? ` horizontal-${horizontal}` : ""
-      }${verticalValue.includes(vertical) && vertical ? ` vertical-${vertical}` : ""}${
-        sizeValue.includes(textSize) && textSize ? ` size-${textSize}` : ""
+      className={`Content${layout ? ` content-layout-${layout}` : ""}${
+        horizontal ? ` horizontal-${horizontal}` : ""}${
+        vertical ? ` vertical-${vertical}` : ""}${
+        textSize ? ` size-${textSize}` : ""
       }`}
-      style={{ width: width, height: height }}
+      style={{ width: width, height: height, gap: `${gap}` }}
     >
       {children}
     </div>

@@ -1,15 +1,16 @@
 interface SpeakerBoardProps {
-  mode?: string;
+  mode?: "slide" | "inlineSlide";
   theme?: string;
-  controlTheme?: string;
+  controlArrowColor?: string;
   width?: string;
   height?: string;
-  controlBar?: string;
+  controlBgColor?: "none" | "dark" | "light";
   slide: (() => JSX.Element)[];
+  controlBar?: "all" | "arrow" | "keyboard";
 }
 
 interface ThemeProps {
-  themeColor?: string;
+  themeColor?: "default" | "sunset" | "malinka" | "moon" | "darkblue" | "sky" | "green" | "dark";
   textColor?: string;
   customThemeColor?: string;
   children: React.ReactNode;
@@ -29,16 +30,18 @@ interface TextProps {
 
 interface ContentProps {
   children: string | React.ReactNode;
-  horizontal?: string;
-  vertical?: string;
-  textSize?: string;
+  horizontal?: "left" | "center" | "right";
+  vertical?: "up" | "center" | "down";
+  textSize?: "xsmall" | "small" | "medium" | "large" | "xlarge" | "xxlarge" | "xxxlarge";
   width?: string;
   height?: string;
+  layout?: "vertical" | "horizontal";
+  gap?: string;
 }
 
 interface LayoutProps {
   children: React.ReactNode;
-  layout: string;
+  layout: "subject" | "section";
 }
 
 interface ControlProps {
@@ -68,3 +71,27 @@ interface TriangleProps {
 interface AllSlideProps {
   slide: (() => JSX.Element)[];
 };
+
+interface ArrowLeftProps {
+  width?: string;
+  color?: string;
+}
+
+interface ArrowRightProps {
+  width?: string;
+  color?: string;
+}
+
+interface ArrowUpProps {
+  height?: string;
+  color?: string;
+}
+
+interface CodeProps {
+  children: string;
+  lang?: string;
+  width?: string;
+  height?: string;
+  textSize?: string;
+  padding?: string;
+}

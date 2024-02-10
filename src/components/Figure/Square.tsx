@@ -1,11 +1,11 @@
 import React from "react";
-import "../types";
+import "../../types";
 
 const Square: React.FC<FigureProps> = ({
   children,
   color = "black",
-  width = "100",
-  height = "100",
+  width = "100px",
+  height = "100px",
   borderColor = "white",
   borderWidth = "0",
 }) => {
@@ -16,9 +16,9 @@ const Square: React.FC<FigureProps> = ({
           className="square"
           style={{
             backgroundColor: color,
-            width: `${width}px`,
-            height: `${height}px`,
-            border: `solid ${borderWidth}px ${borderColor}`,
+            width: `${width}`,
+            height: `${height}`,
+            border: `solid ${borderWidth} ${borderColor}`,
           }}
         >
           {children}
@@ -28,9 +28,9 @@ const Square: React.FC<FigureProps> = ({
           className="square"
           style={{
             backgroundColor: color,
-            width: `${width}px`,
-            height: `${height}px`,
-            border: `solid ${borderWidth}px ${borderColor}`,
+            width: `${width}`,
+            height: `${height}`,
+            border: `solid ${borderWidth} ${borderColor}`,
           }}
         ></div>
       )}

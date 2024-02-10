@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 /* Base */
 
 html, body {
@@ -49,7 +51,14 @@ html, body {
   margin: 0;
   white-space: pre-wrap;
   display: flex;
+}
+
+.content-layout-vertical {
   flex-direction: column;
+}
+
+.content-layout-horizontal {
+  flex-direction: row;
 }
 
 .horizontal-center {
@@ -112,15 +121,15 @@ html, body {
   bottom: 0;
 }
 
-.background-none {
+.Control-background-none {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.background-light {
+.Control-background-light {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.background-dark {
+.Control-background-dark {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -276,6 +285,14 @@ button {
   width: 100%;
   margin: 30px 0;
 }
+
+/* Code */
+.slide-code {
+  background-color: #000042;
+  border-radius: 10px;
+  font-family: 'Source Code Pro', monospace;
+}
+
 
 /* Theme */
 .theme-wrap {

@@ -1,8 +1,6 @@
 import React from "react";
 import "../types";
 
-const themeValue = ["default", "sunset", "malinka", "moon", "darkblue", "sky", "green", "dark"];
-
 const Theme: React.FC<ThemeProps> = ({
   themeColor = "default",
   textColor = "black",
@@ -11,9 +9,7 @@ const Theme: React.FC<ThemeProps> = ({
 }) => {
   return (
     <div
-      className={`theme-wrap${
-        themeValue.includes(themeColor) ? ` ${themeColor}-theme` : "default"
-      }`}
+      className={`theme-wrap ${themeColor}-theme`}
       style={{ color: textColor, backgroundColor: customThemeColor }}
     >
       {children}
