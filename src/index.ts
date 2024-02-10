@@ -12,6 +12,10 @@ import TriangleRight from "./components/TriangleRight";
 import TriangleDown from "./components/TriangleDown";
 import TriangleLeft from "./components/TriangleLeft";
 import AllSlidePdf from "./components/AllSlidePdf";
+import ArrowLeft from "./components/ArrowLeft";
+import ArrowRight from "./components/ArrowRight";
+import ArrowUp from "./components/ArrowUp";
+import ArrowDown from "./components/ArrowDown";
 
 export {
   ReactSpeakerBoard,
@@ -28,4 +32,8 @@ export {
   TriangleLeft,
   Text,
   AllSlidePdf,
+  ArrowLeft,
+  ArrowRight,
+  ArrowUp,
+  ArrowDown,
 };
