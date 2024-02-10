@@ -1,6 +1,6 @@
 {
   "name": "react-speaker-board",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Easily create presentation board using React.",
   "main": "./src/index.ts",
   "type": "module",
@@ -45,6 +45,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "@react-hook/event": "^1.2.6",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "highlight.js": "^11.9.0",

@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "../types";
-// import type { KeyboardEvent } from "react";
+import useEvent from "@react-hook/event";
 
 const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
   mode = "slide",
@@ -11,15 +11,14 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
   width = "100vw",
   height = "100vh",
 }) => {
-  const [view, setView] = useState<JSX.Element>(slide[0]);
   const [index, setIndex] = useState<number>(0);
+  const view = useMemo(() => slide[index], [index, slide]);
   const max = slide.length - 1;
 
   const NextSlide = useCallback(() => {
     if (index !== max) {
       const num = Number(index);
       setIndex(num + 1);
-      setView(slide[num + 1]);
     }
   }, [index, max, slide]);
 
@@ -27,7 +26,6 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
     if (index !== 0) {
       const num = Number(index);
       setIndex(num - 1);
-      setView(slide[num - 1]);
     }
   }, [index, slide]);
 
@@ -40,19 +38,15 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
     }
   }, [NextSlide, ProvSlide]);
 
-  useEffect(() => {
-    if (controlBar === "arrow") return;
-    document.addEventListener("keydown", (e) => handleKeyDown(e));
-    return () => {
-      document.removeEventListener("keydown", (e) => handleKeyDown(e));
-    };
-  }, [handleKeyDown, controlBar]);
+  if (typeof window !== 'undefined') {
+    useEvent(window, "keydown", handleKeyDown);
+  }
 
   return (
     <>
       {mode === "inlineSlide" ? (
         <div className={mode} style={{ width: `${width}`, height: `${height}` }}>
-          {view}
+          <>{view()}</>
           {controlBar !== "keyboard" && (
             <div className={`Control-wrap Control-background-${controlBgColor}`}>
               <div className="Control">
@@ -86,7 +80,7 @@ const ReactSpeakerBoard: React.FC<SpeakerBoardProps> = ({
         </div>
       ) : (
         <div className={mode}>
-          {view}
+          <>{view()}</>
           {controlBar !== "keyboard" && (
             <div className={`Control-wrap background-${controlBgColor}`}>
               <div className="Control">
