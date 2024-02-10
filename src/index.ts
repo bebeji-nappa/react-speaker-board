@@ -5,6 +5,7 @@ import Content from "./components/Content";
 import Spacer from "./components/Spacer";
 import Layout from "./components/Layout";
 import Theme from "./components/Theme";
+import Code from "./components/Code";
 import Square from "./components/Figure/Square";
 import Circle from "./components/Figure/Circle";
 import TriangleUp from "./components/Figure/TriangleUp";
@@ -36,4 +37,5 @@ export {
   ArrowRight,
   ArrowUp,
   ArrowDown,
+  Code,
 };
