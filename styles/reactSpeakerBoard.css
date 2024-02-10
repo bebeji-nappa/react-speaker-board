@@ -119,15 +119,15 @@ html, body {
   bottom: 0;
 }
 
-.background-none {
+.Control-background-none {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.background-light {
+.Control-background-light {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.background-dark {
+.Control-background-dark {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
