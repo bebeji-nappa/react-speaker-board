@@ -89,8 +89,9 @@ interface ArrowUpProps {
 
 interface CodeProps {
   children: string;
-  lang: string;
+  lang?: string;
   width?: string;
   height?: string;
   textSize?: string;
+  padding?: string;
 }
