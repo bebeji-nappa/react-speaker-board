@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/react-speaker-board)
 ![NPM](https://img.shields.io/npm/dw/react-speaker-board)
 
-Easily create presentation board using React Hooks.
+Easily create presentation board using React.
 
 ## Quick Usage
 It install react-speaker-board running this comand.
